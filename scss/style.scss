@@ -2,11 +2,13 @@
 @import "_nullstyle";
 body {
   font-family: 'PT Sans Narrow', sans-serif;
-  background-color: #575454;
 }
 .header {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #000000;
   &__container {
+    display: flex;
+    align-items: center;
+    height: 72px;
   }
 
   &__menu {
@@ -18,22 +20,33 @@ body {
 .container {
 }
 .menu {
-
+  flex: 1 1 auto;
+  font-size: 16px;
+  text-transform: uppercase;
   &__body {
   }
 
   &__list {
+    display: flex;
+    li {
+      margin: 0 20px;
+    }
   }
 
   &__link {
+    color: #fff;
   }
 }
 .actions-header {
-
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
   &__icon {
   }
 
   &__enter {
+    @extend .menu__link;
+    background: url('img/svg/login.svg') 0 0 no-repeat;
   }
 }
 .wrapper {
