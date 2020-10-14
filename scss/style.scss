@@ -2,4 +2,160 @@
 @import "_nullstyle";
 body {
   font-family: 'PT Sans Narrow', sans-serif;
+  background-color: #575454;
+}
+.header {
+  background-color: rgba(0, 0, 0, 0);
+  &__container {
+  }
+
+  &__menu {
+  }
+
+  &__actions {
+  }
+}
+.container {
+}
+.menu {
+
+  &__body {
+  }
+
+  &__list {
+  }
+
+  &__link {
+  }
+}
+.actions-header {
+
+  &__icon {
+  }
+
+  &__enter {
+  }
+}
+.wrapper {
+}
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.top {
+
+		&__logo {
+		}
+
+		&__info {
+
+			&_left {
+			}
+
+			&_center {
+			}
+
+			&_right {
+			}
+		}
+}
+.news-gallery {
+}
+.news {
+
+		&__title {
+		}
+
+		&__text {
+
+			&_1 {
+			}
+
+			&_2 {
+			}
+		}
+
+		&__date {
+
+			&_1 {
+			}
+
+			&_2 {
+			}
+		}
+
+		&__btn {
+		}
+}
+.block-title {
+}
+.gallery {
+
+		&__title {
+		}
+
+		&__image {
+		}
+
+		&__btn {
+
+			&_left {
+			}
+
+			&_right {
+			}
+		}
+}
+.info-order {
+}
+.info {
+
+		&__title {
+		}
+
+		&__adress {
+		}
+
+		&__time {
+		}
+
+		&__btn {
+
+			&_left {
+			}
+
+			&_right {
+			}
+		}
+}
+.order {
+
+		&__title {
+		}
+
+		&__text {
+		}
+
+		&__date {
+		}
+
+		&__time {
+		}
+
+		&__name {
+		}
+
+		&__phone {
+		}
+}
+.container-footer {
+
+  &__adress {
+  }
+
+  &__social {
+  }
+
+  &__madein {
+  }
 }
