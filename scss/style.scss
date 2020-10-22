@@ -2,6 +2,7 @@
 @import "_nullstyle";
 body {
 	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
 }
 .header {
   background-color: #000000;
@@ -89,7 +90,6 @@ body {
 	&__column {
 		flex: 0 1 33.333%;
 		padding: 0px 12.5px;
-		display: flex;
 	}
 
 	&__item {
@@ -112,64 +112,74 @@ body {
 	}
 }
 .news-gallery {
-	background: url('../img/line-between.png');
+	background: url('../img/line-between.png') no-repeat;
 	background-color: #fff;
 	max-width: 940px;
 	margin: 0 auto;
+	padding: 50px 80px;
+	margin: 0 0 35px 0;
 	&__row {
 		display: flex;
 		justify-content: center;
-		margin: 50px 80px;
 	}
 
 	&__column {
-		border: 1px solid #000;
 		flex-basis: 50%;
-	}
-	&__item {
 	}
 }
 
 .news {
+	padding: 0 5px 0 0;
 		&__title {
 		}
 
 		&__text {
-
-			&_1 {
-			}
-
-			&_2 {
-			}
+			line-height: 24px;
+			margin: 0 0 5px 0;
 		}
 
 		&__date {
-
-			&_1 {
-			}
-
-			&_2 {
-			}
+			margin: 0 0 30px 0;
 		}
-
-		&__btn {
+		&__btn {	
 		}
+}
+.btn {
+	display: inline-block;
+	width: 140px;
+	height: 45px;
+	text-transform: uppercase;
+	line-height: 45px;
+	text-align: center;
+	color: #fff;
+	background-color: #000;
 }
 .block-title {
 	text-transform: uppercase;
 	font-size: 30px;
 	line-height: 42px;
+	margin: 0 0 30px 0;
+}
+.block-text {
+	line-height: 24px;
+	text-transform: uppercase;
 }
 .gallery {
+	padding: 0 0 0 85px;
 		&__title {
+			padding: 0 0 0 5px;
 		}
 
 		&__image {
+			display: flex;
+			max-width: 100%;
+			justify-content: center;
 		}
 
 		&__btn {
 
 			&_left {
+				margin: 40px 19px 0 0;
 			}
 
 			&_right {
@@ -177,46 +187,120 @@ body {
 		}
 }
 .info-order {
+	@extend .news-gallery;
+	&__row {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__column {
+		flex-basis: 50%;
+	}
+
+	&__item {
+	}
 }
 .info {
 
-		&__title {
+	&__title {
+	}
+
+	&__adress {
+		margin: 0 0 30px 0;
+	}
+
+	&__time {
+	}
+
+	&__btn {
+
+		&_left {
+			margin: 25px 20px 0 0;
 		}
 
-		&__adress {
+		&_right {
 		}
-
-		&__time {
-		}
-
-		&__btn {
-
-			&_left {
-			}
-
-			&_right {
-			}
-		}
+	}
 }
 .order {
+	padding: 0 0 0 85px;
+	&__title {
+	}
 
-		&__title {
-		}
+	&__text {
+	}
+	&-date {
+	}
+}
+.input {
+	margin: 0 0 20px 0;
+	&__body {
+	}
 
-		&__text {
-		}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-		&__date {
-		}
+	&__column {
+		flex: 0 1 50%;
+	}
 
-		&__time {
-		}
+	&__item {
+	}
+}
+input[type=date]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	display: none;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+	-webkit-appearance: none;
+	display: none;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+	background: none;
+}
+input[type=date] {
+	opacity: 0.5;
+}
+input[type=time] {
+	opacity: 0.5;
+}
+.item {
 
-		&__name {
-		}
+	&__row {
+	}
 
-		&__phone {
-		}
+	&__text {
+		padding: 0 0 0 10px;
+		margin: 20px 0 0 0;
+		text-transform: uppercase;
+	}
+
+	&__input {
+		display: inline-block;
+		border: 2px solid #000;
+		width: 138px;
+		height: 40px;
+		line-height: 35px;
+		margin: 10px 0 0 0;
+		padding: 0 0 0 10px;
+	}
+}
+input {
+	opacity: 0.7;
+	width: 120px;
+}
+
+button {
+	display: block;
+	width: 300px;
+	height: 45px;
+	text-transform: uppercase;
+	line-height: 45px;
+	text-align: center;
+	color: #fff;
+	background-color: #000;
 }
 .container-footer {
 

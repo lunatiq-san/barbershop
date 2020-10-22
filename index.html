@@ -80,11 +80,11 @@
               <div class="news-gallery__item">
                 <div class="news">
                   <div class="news__title block-title">Новости</div>
-                  <div class="news__text_1"></div>
-                  <div class="news__date_1"></div>
-                  <div class="news__text_2"></div>
-                  <div class="news__date_2"></div>
-                  <a href="" class="news__btn"></a>
+                  <div class="news__text block-text">Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</div>
+                  <div class="news__date">11 января</div>
+                  <div class="news__text block-text">В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</div>
+                  <div class="news__date">18 января</div>
+                  <a href="" class="news__btn btn">Все новости</a>
                 </div>
               </div>
             </div>
@@ -92,32 +92,87 @@
               <div class="news-gallery__item">
                 <div class="gallery">
                   <div class="gallery__title block-title">Фотогалерея</div>
-                    <img src="" alt="" class="gallery__image">
-                    <a href="" class="gallery__btn_left"></a>
-                    <a href="" class="gallery__btn_right"></a>
+                    <div class="gallery__image"><img src="https://picsum.photos/285/165" alt="" class=""></div>
+                    <a href="" class="gallery__btn_left btn">Назад</a>
+                    <a href="" class="gallery__btn_right btn">Вперед</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="info-order">
-          <div class="info">
-            <div class="info__title block-title"></div>
-            <div class="info__adress"></div>
-            <div class="info__time"></div>
-            <a href="" class="info__btn_left"></a>
-            <a href="" class="info__btn_right"></a>
-          </div>
-          <div class="order">
-            <div class="order__title block-title"></div>
-            <div class="order__text"></div>
-            <form action="#">
-              <div class="order__date"></div>
-              <div class="order__time"></div>
-              <div class="order__name"></div>
-              <div class="order__phone"></div>
-              <button tabindex="" type="submit"></button>
-            </form>
+          <div class="info-order__row">
+            <div class="info-order__column">
+              <div class="info-order__item">
+                <div class="info">
+                  <div class="info__title block-title">Контактная информация</div>
+                  <div class="info__adress block-text">Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8 <br>
+                  Телефон: +7 (495) 666-02-66</div>
+                  <div class="info__time block-text">Время работы: <br>
+                    Пн—Пт: с 10:00 до 22:00 <br>
+                    Сб—Вс: с 10:00 до 19:00</div>
+                  <a href="" class="info__btn_left btn">Как проехать</a>
+                  <a href="" class="info__btn_right btn">Обратная связь</a>
+                </div>
+              </div>
+            </div>
+            <div class="info-order__column">
+              <div class="info-order__item">
+                <div class="order">
+                  <div class="order__title block-title">Записаться</div>
+                  <div class="order__text block-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</div>
+                  <form action="#">
+                    <div class="input">
+                      <div class="input__body">
+                        <div class="input__row">
+                          <div class="input__column">
+                            <div class="input__item item">
+                              <div class="item__row">
+                                <div class="item__text">Дата</div>
+                                <div class="item__input">
+                                  <input type="date" name="order-date" value="2020-01-01" required="required">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input__column">
+                            <div class="input__item item">
+                              <div class="item__row">
+                                <div class="item__text">Время</div>
+                                <div class="item__input">
+                                  <input type="time" name="order-time" value="10:00" required="required">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input__column">
+                            <div class="input__item item">
+                              <div class="item__row">
+                                <div class="item__text">Ваше имя</div>
+                                <div class="item__input">
+                                  <input type="name" name="order-name" placeholder="Beard" required="required">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input__column">
+                            <div class="input__item item">
+                              <div class="item__row">
+                                <div class="item__text">Телефон</div>
+                                <div class="item__input">
+                                  <input type="tel" name="order-phone" placeholder="+7 123 456-78-90" required="required">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button tabindex="" type="submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
